@@ -1,0 +1,26 @@
+public class NewClass {
+  public static int getLargest(int arr[], int sz) {
+    int iterate ;
+    int iterate ;
+    int largest ;
+        while (iterate1 < sz - 1) {
+            iterate2++;
+            if (iterate2  sz) {
+                iterate1++;
+                iterate2 = iterate1;
+                }
+                continue;
+            }
+            int product  iterate1]  iterate2];
+            if (product  largest)
+                largest  product;
+            }
+            return largest;
+        }
+}
+// The Big O of this algorithm is n*2 or sz*2.
+// The outer loop and the inner loop both runs from 0 to sz - 1 times.
+// The second loop will however reset its value on the condition that iterate2 >= sz
+// This only happens when iterate1 reaches sz - 1
+// So the total number of iterations for iterate2 will be 1 + 2 + 3 + ... + sz giving sz(sz+1)/(sz^2)
+// The Big O is O(sz^2)
